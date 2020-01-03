@@ -1,22 +1,23 @@
 import React from 'react'
-import logo from './logo.svg'
+import * as L from './core-components/layout/layout'
+// import logo from './logo.svg'
 import './App.css'
-import {TodoList} from './examples/TodoList'
+
+import {ThemeProvider} from 'emotion-theming'
+import theme from './utils/theme'
+import {TourOfHeroes} from './examples/tour-of-heroes/TourOfHeroes'
+
+const Root: React.FC = (props) => {
+  return <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+}
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-      <TodoList />
-    </div>
+    <L.Layout>
+      <Root>
+        <TourOfHeroes />
+      </Root>
+    </L.Layout>
   )
 }
 

@@ -44,3 +44,16 @@ npm install --save prettier eslint-config-prettier husky lint-staged
 ```
 
 > add .prettierrc and .prettierignore files
+
+```javascript
+npm install --save @reach/router @types/reach__router
+// use this
+import { RouteComponentProps } from '@reach/router'
+```
+
+> Looking into rebass, styled system for styling options.
+
+```javascript
+npm install rebass @types/rebass  emotion-theming // no longer need --save option
+// include @rebass/preset theme by copying from the lib
+```
