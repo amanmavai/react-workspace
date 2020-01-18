@@ -1,5 +1,6 @@
 import React from 'react'
 import * as L from './core-components/layout/layout'
+import {SubReddit} from './examples/subreddit/SubReddit'
 // import logo from './logo.svg'
 import './App.css'
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
     <L.Layout>
       <Root>
         <TourOfHeroes />
+        <SubReddit />
       </Root>
     </L.Layout>
   )
