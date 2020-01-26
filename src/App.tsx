@@ -8,6 +8,7 @@ import {ThemeProvider} from 'emotion-theming'
 import theme from './utils/theme'
 import {TourOfHeroes} from './examples/tour-of-heroes/TourOfHeroes'
 import {ExampleForm} from './examples/form-example/ExampleForm'
+import {Debug} from './core-components/Debug/Debug'
 
 const Root: React.FC = (props) => {
   return <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
@@ -18,6 +19,7 @@ const App: React.FC = () => {
     {component: <TourOfHeroes />, isVisible: false},
     {component: <SubReddit />, isVisible: false},
     {component: <ExampleForm />, isVisible: true},
+    {component: <Debug o={{hello: 'one', fire: 'two', sure: {a: 1, b: 2}}} />, isVisible: true},
   ]
   return (
     <L.Layout>

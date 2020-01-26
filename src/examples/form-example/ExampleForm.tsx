@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {Formik} from '../../core-components/formik/Formik'
-import {Debug} from '../../core-components/formik/Debug'
+import {Debug} from '../../core-components/Debug/Debug'
 import {ExampleField} from './ExampleField'
 
 export function ExampleForm() {

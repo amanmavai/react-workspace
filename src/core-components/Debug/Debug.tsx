@@ -1,8 +1,5 @@
 import * as React from 'react'
 interface Props {
-  /**
-   * A description of the prop that you seem fit :)
-   */
   o: any
 }
 export const Debug: React.SFC<Props> = ({o}) => {
@@ -22,7 +19,7 @@ export const Debug: React.SFC<Props> = ({o}) => {
           letterSpacing: '1px',
         }}
       >
-        FORMIK STATE
+        STATE
         <pre
           style={{
             fontSize: '.65rem',
