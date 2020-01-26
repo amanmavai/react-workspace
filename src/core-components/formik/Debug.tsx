@@ -3,9 +3,9 @@ interface Props {
   /**
    * A description of the prop that you seem fit :)
    */
-  formik: any
+  o: any
 }
-export const Debug: React.SFC<Props> = (props) => {
+export const Debug: React.SFC<Props> = ({o}) => {
   return (
     <div
       style={{margin: '3rem 0', borderRadius: 4, background: '#f6f8fa', boxShadow: '0 0 1px #eee inset', color: 'blue'}}
@@ -29,7 +29,7 @@ export const Debug: React.SFC<Props> = (props) => {
             padding: '.25rem .5rem',
           }}
         >
-          {JSON.stringify(props.formik, null, 2)}
+          {JSON.stringify(o, null, 2)}
         </pre>
       </div>
     </div>

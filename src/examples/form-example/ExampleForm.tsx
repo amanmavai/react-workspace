@@ -38,7 +38,7 @@ export function ExampleForm() {
           <button type="submit" disabled={f.isSubmitting}>
             Submit
           </button>
-          <Debug formik={f} />
+          <Debug o={f} />
         </form>
       )}
     </Formik>
